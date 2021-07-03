@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="start-quiz">
+        <button class="start-quiz__btn btn-start btn" id="start-btn">
+          Start Quiz
+        </button>
+      </div>
+      <div class="quiz hidden">
+        <h1 class="quiz__question">
+          <span class="quiz__question--q">Q: </span>
+          <span class="quiz__question--actual"></span>
+        </h1>
+        <div class="quiz__option">
+          <button class="quiz__option--btn quiz__option--1" id="1"></button
+          ><button class="quiz__option--btn quiz__option--2" id="2"></button
+          ><button class="quiz__option--btn quiz__option--3" id="3"></button
+          ><button class="quiz__option--btn quiz__option--4" id="4"></button>
+        </div>
+        <div class="quiz-navigation">
+          <button class="quiz-navigation__forward btn-next btn">&rarr;</button>
+          <button class="quiz-navigation__final hidden btn">
+            Show me the Results &rarr;
+          </button>
+        </div>
+      </div>
+      <div class="results__tab hidden"></div>
+    </main>
+  </body>
+</html>
